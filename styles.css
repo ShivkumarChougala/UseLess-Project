@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Comic Neue', cursive; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0px auto 25px;
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+}
+
+h2 {
+    max-width: 450px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 10px 20px;
+    line-height: 22px;
+}
+
+button {
+    padding: 10px 15px;
+    border: 2px solid;
+    border-radius: 3px;
+    background: #fefefe;
+    cursor: pointer;
+    transition: background-color 200ms;
+    max-width: 80vw;
+    font-family: 'Comic Neue', cursive; 
+}
+
+button:hover {
+    background: #eee;
+}
+
+button span {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.flip {
+    transform: scale(-1, 1);
+}
+
+.countdown-box {
+    width: 600px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;  /* Positioned at the bottom of the page */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+  
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    color: #333;
+}
+
+img.mosquito {
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .countdown-box {
+        width: 300px;
+        height: 80px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
